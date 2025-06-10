@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open Music</title>
+    <link rel="stylesheet" href="src/styles/globalStyles.css" />
+    <link rel="stylesheet" href="src/styles/album.css" />
+    <link rel="stylesheet" href="src/styles/genres.css" />
+    
+    <link rel="stylesheet" href="src/styles/hearder.css" />
+    <link rel="stylesheet" href="src/styles/index.css" />
+    <link rel="stylesheet" href="src/styles/price-range.css" />
+    <link rel="stylesheet" href="src/styles/reset.css" />
+    
+  </head>
+  <body>
+    <!-- CABEÇALHO -->
+    <header class="header">
+      <h1 class="header__title"><span style="color: #6F00FF;">o</span>pen <span style="color: #6F00FF;">m</span>usic</h1>
+      <button class="header__theme-toggle">
+        <img src="src/assents/icons/sun-icon.svg" alt="Modo claro" class="theme-icon sun-icon" />
+        <img src="src/assents/icons/moon-icon.svg" alt="Modo escuro" class="theme-icon moon-icon" />
+      </button>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="main-content">
+      <!-- SEÇÃO DE FILTRO POR GENERO -->
+      <section class="genres-section">
+        <h2 class="section-title">Gêneros</h2>
+        <div class="genres-container">
+          <button class="genre-button">Film</button>
+          <button class="genre-button">MVP</button>
+          <button class="genre-button">Fowl</button>
+          <button class="genre-button">Sanna</button>
+          <button class="genre-button">Bella</button>
+          <button class="genre-button">Ray</button>
+          <button class="genre-button">Hip-Hop</button>
+        </div>
+      </section>
+
+      <!-- SEÇÃO DE FILTRO POR PREÇO -->
+      <section class="price-section">
+        <h2 class="section-title">Definir Preço</h2>
+        <div class="price-range-container">
+          <input type="range" min="0" max="200" value="85" class="price-range" />
+          <span class="price-value">R$ 85 - R$ 100</span>
+        </div>
+      </section>
+
+      <!-- SEÇÃO DE ALBUNS -->
+      <section class="albums-section">
+        <h2 class="section-title">Álbuns Encontrados</h2>
+        <div class="albums-container">
+          <!-- Álbum 1 -->
+          <div class="album-card">
+            <img src="src/assents/image/cover-1.svg" alt="Acabou e Chouze" class="album-cover" />
+            <div class="album-info">
+              <h3 class="album-title">Acabou e Chorare</h3>
+              <p class="album-band">Novos Baianos</p>
+              <p class="album-type">MPB</p>
+              <p class="album-price">R$ 137,91</p>
+            </div>
+          </div>
+          
+          <!-- Álbum 2 -->
+          <div class="album-card">
+            <img src="src/assents/image/cover-2.svg" alt="The Wall" class="album-cover" />
+            <div class="album-info">
+              <h3 class="album-title">The Wall</h3>
+              <p class="album-band">Pink Floyde</p>
+              <p class="album-type">Rock</p>
+              <p class="album-price">R$ 123,36</p>
+            </div>
+          </div>
+          
+          <!-- Álbum 3 -->
+          <div class="album-card">
+            <img src="src/assents/image/cover-3.svg" alt="To Pimp a Butterfly" class="album-cover" />
+            <div class="album-info">
+              <h3 class="album-title">To Pimp a Butterfly</h3>
+              <p class="album-band">Kendrick Lamar</p>
+              <p class="album-type">Rap</p>
+              <p class="album-price">R$ 102,66</p>
+            </div>
+          </div>
+          
+          <!-- Álbum 4 -->
+          <div class="album-card">
+            <img src="src/assents/image/cover-2.svg" alt="The Wall" class="album-cover" />
+            <div class="album-info">
+              <h3 class="album-title">The Wall</h3>
+              <p class="album-band">Pink Floyde</p>
+              <p class="album-type">Rock</p>
+              <p class="album-price">R$ 123,36</p>
+            </div>
+          </div>
+          
+          <!-- Álbum 5 -->
+          <div class="album-card">
+            <img src="src/assents/image/cover-1.svg" alt="Acabou e Chouze" class="album-cover" />
+            <div class="album-info">
+              <h3 class="album-title">Acabou e Chorare</h3>
+              <p class="album-band">Novos Baianos</p>
+              <p class="album-type">MPB</p>
+              <p class="album-price">R$ 137,91</p>
+            </div>
+          </div>
+          
+          <!-- Álbum 6 -->
+          <div class="album-card">
+            <img src="src/assents/image/cover-3.svg" alt="To Pimp a Butterfly" class="album-cover" />
+            <div class="album-info">
+              <h3 class="album-title">To Pimp a Butterfly</h3>
+              <p class="album-band">Kendrick Lamar</p>
+              <p class="album-type">Rap</p>
+              <p class="album-price">R$ 102,66</p>
+            </div>
+          </div>
+      </section>
+    </main>
+
+    <script src="./src/scripts/index.js"></script>
+  </body>
+</html>
