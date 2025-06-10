@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+
+.header__title {
+  font-size: var(--font-size-logo);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -0.5px;
+}
+
+.header__theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}

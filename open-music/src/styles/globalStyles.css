@@ -1,0 +1,38 @@
+/* Estilos Globais */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    /* Cores da marca */
+    --brand-1: #6F00FF;
+    --brand-2: #8629FF;
+
+    /* Escala de cinza */
+    --gray-1: #15171A;
+    --gray-2: #212529;
+    --gray-3: #2B2F33;
+    --gray-4: #CED4DA;
+    --gray-5: #DEE2E6;
+    --gray-6: #F1F3F5;
+    --gray-7: #F8F9FA;
+    --gray-8: #FDFEFF;
+ 
+    /* Sistema de tipografia */
+    --font-size-logo: 40px;
+    --font-size-xxl: 24px;
+    --font-size-xl: 22px;
+    --font-size-lg: 19.2px;
+    --font-size-md: 16px;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--gray-8);
+  color: var(--gray-1);
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos base para headings */
+h1 { font-size: var(--font-size-xxl); }
+h2 { font-size: var(--font-size-xl); }
+h3 { font-size: var(--font-size-lg); }
