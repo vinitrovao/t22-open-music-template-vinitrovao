@@ -22,6 +22,11 @@
     --font-size-xl: 22px;
     --font-size-lg: 19.2px;
     --font-size-md: 16px;
+    
+    /* Sistema de tipografia */
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 600;
 }
 body {
   font-family: 'Inter', sans-serif;
@@ -36,3 +41,22 @@ body {
 h1 { font-size: var(--font-size-xxl); }
 h2 { font-size: var(--font-size-xl); }
 h3 { font-size: var(--font-size-lg); }
+
+/* Adicione no final do arquivo */
+body.dark-mode {
+  background-color: var(--gray-1);
+  color: var(--gray-8);
+}
+
+body.dark-mode .header {
+  background-color: var(--gray-2);
+}
+
+body.dark-mode .album-card {
+  background-color: var(--gray-3);
+}
+
+body.dark-mode .album-title,
+body.dark-mode .album-price {
+  color: var(--gray-8);
+}
