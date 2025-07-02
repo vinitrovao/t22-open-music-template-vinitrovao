@@ -1,12 +1,15 @@
 .main-content {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 200px;
 }
 
-.section-title {
-  font-size: var(--font-size-xl);
-  font-weight: var(--font-weight-medium);
-  color: var(--gray-1);
-  margin-bottom: 16px;
+.section-title{
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xxl);
+  color: var(--gray-2);
+  margin-bottom: 22px;
 }

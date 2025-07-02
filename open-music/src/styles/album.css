@@ -1,48 +1,72 @@
+.albums-section {
+  width: 80%;
+  padding-top: 30px;
+  padding-bottom: 2rem;
+}
+
 .albums-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
 }
 
 .album-card {
-  background-color: white;
-  border-radius: 8px;
+  width: 308px;
+  background-color: var(--gray-7);
+  border-radius: 0.5rem;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .album-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-0.5rem);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 .album-cover {
   width: 100%;
-  height: auto;
-  aspect-ratio: 1/1;
+  height: 300px;
   object-fit: cover;
 }
 
 .album-info {
-  padding: 16px;
+  width: 90%;
+  padding: 1.5rem;
 }
 
 .album-title {
-  font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-medium);
-  color: var(--gray-1);
-  margin-bottom: 4px;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--gray-2);
+  margin-bottom: 0.5rem;
 }
 
 .album-band {
+  font-weight: var(--font-weight-regular);
   font-size: var(--font-size-md);
   color: var(--gray-3);
-  margin-bottom: 8px;
 }
-
 .album-price {
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-bold);
-  color: var(--brand-1);
+  color: var(--gray-2);
+}
+.album-details,
+.pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+.buy-button{
+  padding: 8px 16px;
+  border: 1px solid var(--brand-2);
+  border-radius: 4px;
+  background-color: var(--brand-2);
+  color: #ffffff;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
 }
