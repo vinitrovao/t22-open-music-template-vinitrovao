@@ -11,10 +11,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
   margin: 0px 30px;
   padding: 45px;
-  border-bottom: 3px solid var(--brand-2);
+  border-bottom: 3px solid var(--brand-1);
 }
 .header__title {
   font-size: var(--font-size-logo);
@@ -27,4 +26,6 @@
   cursor: pointer;
   padding: 0.5rem;
 }
-
+.purple-text{
+  color: var(--brand-1);
+}

@@ -25,7 +25,7 @@
 }
 
 .genre-button.active {
-  background-color: var(--brand-1);
+  background-color: var(--gray-2);
   color: white;
-  border-color: var(--brand-1);
+  border-color: var(--gray-7);
 }

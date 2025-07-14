@@ -32,7 +32,6 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: var(--gray-8);
   color: var(--gray-1);
-  max-width: 1024px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -51,12 +50,43 @@ body.dark-mode {
 body.dark-mode .header {
   background-color: var(--gray-2);
 }
-
-body.dark-mode .album-card {
+body.dark-mode .purple-text{
+  color: var(--brand-2);
+}
+body.dark-mode .genre-button{
+  border: 1px solid var(--gray-2);
+  background-color: var(--gray-2);
+  color: var(--gray-6);
+}
+body.dark-mode .genre-button:hover{
+  background-color: var(--gray-7);
+  color: var(--gray-2);
+}
+body.dark-mode .genre-button.active{
+  background-color: var(--gray-7);
+  color: var(--gray-2);
+}
+body.dark-mode #price-number{
+  color: var(--brand-2);
+}
+body.dark-mode .price-range{
+  background: linear-gradient(to right, var(--brand-2) 50%, var(--gray-4) 50%);
+}
+body.dark-mode .price-range::-moz-range-thumb,
+body.dark-mode .price-range::-webkit-slider-thumb{
+  border: 4px solid var(--brand-2);
+}body.dark-mode .album-card {
   background-color: var(--gray-3);
 }
 
+body.dark-mode .album-type,
+body.dark-mode .album-band{
+  color: var(--gray-6);
+}
+
+body.dark-mode .section-title,
+body.dark-mode .price-value,
 body.dark-mode .album-title,
 body.dark-mode .album-price {
-  color: var(--gray-8);
+  color: var(--gray-7);
 }

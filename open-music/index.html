@@ -18,7 +18,7 @@
     <!-- CABEÇALHO -->
     <header class="header">
       <div class="header__div">
-        <h1 class="header__title"><span style="color: #6F00FF;">o</span>pen <span style="color: #6F00FF;">m</span>usic</h1>
+        <h1 class="header__title"><span class="purple-text">o</span>pen <span class="purple-text">m</span>usic</h1>
       <button class="header__theme-toggle">
         <img src="src/assents/icons/sun-icon.svg" alt="Modo claro" class="theme-icon sun-icon" />
         <img src="src/assents/icons/moon-icon.svg" alt="Modo escuro" class="theme-icon moon-icon" />
@@ -50,10 +50,15 @@
           <h2 class="section-title">Definir Preço</h2>
           <span class="price-value">Até <span id="price-number">R$ 100</span></span>
         </div>
+
         <div class="price-range-container">
-          <input type="range" min="0" max="200" value="85" class="price-range" /> 
+          <div class="progress-fill">
+            <progress id="price-progress" max="150" value="150"></progress>
+          </div>
+          <input id="price-slider" type="range" min="0" max="150" value="150" class="price-range" />
         </div>
       </section>
+
 
       <!-- SEÇÃO DE ALBUNS -->
       <section class="albums-section">
@@ -109,15 +114,15 @@
           
           <!-- Álbum 4 -->
           <div class="album-card">
-            <img src="src/assents/image/cover-2.svg" alt="The Wall" class="album-cover" />
+            <img src="src/assents/image/cover-4.jpg" alt="The Wall" class="album-cover" />
             <div class="album-info">
-              <h3 class="album-title">The Wall</h3>
+              <h3 class="album-title">Thriller</h3>
               <div class="album-details">               
-                <p class="album-band">Pink Floyde</p>
-                <p class="album-type">Rock</p>
+                <p class="album-band">Michael Jackson</p>
+                <p class="album-type">Pop</p>
               </div>
               <div class="pricing">               
-                <p class="album-price">R$ 123,36</p>
+                <p class="album-price">R$ 142.32</p>
                 <button class="buy-button">Comprar</button>
               </div>
             </div>
@@ -125,15 +130,15 @@
           
           <!-- Álbum 5 -->
           <div class="album-card">
-            <img src="src/assents/image/cover-1.svg" alt="Acabou e Chouze" class="album-cover" />
+            <img src="src/assents/image/cover-5.jpg" alt="Acabou e Chouze" class="album-cover" />
             <div class="album-info">
-              <h3 class="album-title">Acabou e Chorare</h3>
+              <h3 class="album-title">All Eyez on Me</h3>
               <div class="album-details">               
-                <p class="album-band">Novos Baianos</p>
-                <p class="album-type">MPB</p>
+                <p class="album-band">2Pac</p>
+                <p class="album-type">Hip-Hop</p>
               </div>
               <div class="pricing">          
-                <p class="album-price">R$ 137,91</p>
+                <p class="album-price">R$ 50.13</p>
                 <button class="buy-button">Comprar</button>
               </div>
             </div>
@@ -141,15 +146,15 @@
           
           <!-- Álbum 6 -->
           <div class="album-card">
-            <img src="src/assents/image/cover-3.svg" alt="To Pimp a Butterfly" class="album-cover" />
+            <img src="src/assents/image/cover-6.jpg" alt="To Pimp a Butterfly" class="album-cover" />
             <div class="album-info">
-              <h3 class="album-title">To Pimp a Butterfly</h3>
+              <h3 class="album-title">Dom de Sambar</h3>
               <div class="album-details">
-                <p class="album-band">Kendrick Lamar</p>
-                <p class="album-type">Rap</p>
+                <p class="album-band">Turma do Pagode</p>
+                <p class="album-type">Samba</p>
               </div>
               <div class="pricing">
-                <p class="album-price">R$ 102,66</p>
+                <p class="album-price">R$ 51.67</p>
                 <button class="buy-button">Comprar</button>
               </div>
           </div>
