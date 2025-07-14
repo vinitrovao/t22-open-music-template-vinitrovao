@@ -33,14 +33,14 @@
       <section class="genres-section">
         <h2 class="section-title">Gêneros</h2>
         <div class="genres-container">
-          <button class="genre-button">Todos</button>
-          <button class="genre-button">Pop</button>
-          <button class="genre-button">MPB</button>
-          <button class="genre-button">Forró</button>
-          <button class="genre-button">Samba</button>
-          <button class="genre-button">Baião</button>
-          <button class="genre-button">Rap</button>
-          <button class="genre-button">Hip-Hop</button>
+          <button class="genre-button" data-genre="all">Todos</button>
+          <button class="genre-button" data-genre="Pop">Pop</button>
+          <button class="genre-button" data-genre="MPB">MPB</button>
+          <button class="genre-button" data-genre="Forro">Forró</button>
+          <button class="genre-button" data-genre="Samba">Samba</button>
+          <button class="genre-button" data-genre="Rock">Rock</button>
+          <button class="genre-button" data-genre="Rap">Rap</button>
+          <button class="genre-button" data-genre="Hip-Hop">Hip-Hop</button>
         </div>
       </section>
 
@@ -65,7 +65,7 @@
         <h2 class="section-title">Álbuns Encontrados</h2>
         <div class="albums-container">
           <!-- Álbum 1 -->
-          <div class="album-card">
+          <div class="album-card" data-price="137.91">
             <img src="src/assents/image/cover-1.svg" alt="Acabou e Chouze" class="album-cover" />
             <div class="album-info">
               <h3 class="album-title">Acabou e Chorare</h3>
@@ -81,7 +81,7 @@
           </div>
           
           <!-- Álbum 2 -->
-          <div class="album-card">
+          <div class="album-card" data-price="123.36">
             <img src="src/assents/image/cover-2.svg" alt="The Wall" class="album-cover" />
             <div class="album-info">
               <h3 class="album-title">The Wall</h3>
@@ -97,7 +97,7 @@
           </div>
           
           <!-- Álbum 3 -->
-          <div class="album-card">
+          <div class="album-card" data-price="102.66">
             <img src="src/assents/image/cover-3.svg" alt="To Pimp a Butterfly" class="album-cover" />
             <div class="album-info">
               <h3 class="album-title">To Pimp a Butterfly</h3>
@@ -113,7 +113,7 @@
           </div>
           
           <!-- Álbum 4 -->
-          <div class="album-card">
+          <div class="album-card" data-price="142.32">
             <img src="src/assents/image/cover-4.jpg" alt="The Wall" class="album-cover" />
             <div class="album-info">
               <h3 class="album-title">Thriller</h3>
@@ -122,14 +122,14 @@
                 <p class="album-type">Pop</p>
               </div>
               <div class="pricing">               
-                <p class="album-price">R$ 142.32</p>
+                <p class="album-price">R$ 142,32</p>
                 <button class="buy-button">Comprar</button>
               </div>
             </div>
           </div>
           
           <!-- Álbum 5 -->
-          <div class="album-card">
+          <div class="album-card" data-price="50.13">
             <img src="src/assents/image/cover-5.jpg" alt="Acabou e Chouze" class="album-cover" />
             <div class="album-info">
               <h3 class="album-title">All Eyez on Me</h3>
@@ -138,14 +138,14 @@
                 <p class="album-type">Hip-Hop</p>
               </div>
               <div class="pricing">          
-                <p class="album-price">R$ 50.13</p>
+                <p class="album-price">R$ 50,13</p>
                 <button class="buy-button">Comprar</button>
               </div>
             </div>
           </div>
           
           <!-- Álbum 6 -->
-          <div class="album-card">
+          <div class="album-card" data-price="51.67">
             <img src="src/assents/image/cover-6.jpg" alt="To Pimp a Butterfly" class="album-cover" />
             <div class="album-info">
               <h3 class="album-title">Dom de Sambar</h3>
@@ -154,10 +154,16 @@
                 <p class="album-type">Samba</p>
               </div>
               <div class="pricing">
-                <p class="album-price">R$ 51.67</p>
+                <p class="album-price">R$ 51,67</p>
                 <button class="buy-button">Comprar</button>
               </div>
           </div>
+      </section>
+      <section class="albums-section">
+        <h2 class="section-title">Álbuns Encontrados</h2>
+        <div class="albums-container">
+          <!-- Aqui vai entrar os álbuns buscados da API via JavaScript -->
+        </div>
       </section>
     </main>
 
