@@ -1,17 +1,17 @@
 export async function fetchAlbums() {
+  const url = "https://openmusic-fake-api.onrender.com/api/musics";
+
   try {
-    const response = await fetch('https://openmusic-fake-api.onrender.com/api/musics');
+    const response = await fetch(url);
 
     if (!response.ok) {
-      throw new Error('Erro ao buscar os álbuns');
+      throw new Error(`Erro na requisição: ${response.status}`);
     }
 
-    const albums = await response.json();
-
-    return albums;
-
+    const data = await response.json();
+    return data; 
   } catch (error) {
-    console.error(error);
-    return []; 
+    console.error("Erro ao buscar álbuns:", error);
+    return [];
   }
 }
